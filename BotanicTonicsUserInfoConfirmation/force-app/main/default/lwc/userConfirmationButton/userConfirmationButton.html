@@ -1,6 +1,6 @@
 <template>
   <!-- Button to open the flow in a modal -->
-  <lightning-button label="Update Information" onclick={handleClick} class="slds-m-around_medium"></lightning-button>
+  <lightning-button label="Confirm Information" onclick={handleClick} class="slds-m-around_medium"></lightning-button>
 
   <!-- Modal structure -->
   <template if:true={isFlowVisible}>
@@ -23,7 +23,6 @@
             onstatuschange={handleStatusChange} onattributechange={handleFlowAttributeChange}>
           </lightning-flow>
         </div>
-
       </div>
     </section>
     <div class="slds-backdrop slds-backdrop_open"></div>
